@@ -1,0 +1,20 @@
+{
+  "Key1" : "value1",
+  "key2" : "value2",
+  "object 1" : {
+    "id" : 1,
+    "name" : "Ramesh",
+    "lastname" : "Kumar"
+  },
+  "array" : [ "1", "2", "3" ],
+  "object array" : [ {
+    "id" : 1,
+    "name" : "Ramesh",
+    "lastname" : "Kumar"
+  }, {
+    "id" : 1,
+    "name" : "Sohan",
+    "lastname" : "Kumarasdad"
+  } ],
+  "list" : [ "3", "4", "5", "6" ]
+}

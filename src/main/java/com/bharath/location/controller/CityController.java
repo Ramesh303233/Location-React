@@ -43,6 +43,9 @@ public class CityController {
 	
 	
 	public void test() {
+		int a=1;
+		int b=2;
+		
 		System.out.println("Hello  test method...");
 	}
 	

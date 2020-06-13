@@ -42,14 +42,14 @@ public class LocationController {
 		return "createLocation";
 
 	}
-
+	
 	@RequestMapping("/saveLoc")
 	public String saveLocation(@ModelAttribute("location") Location location, ModelMap modelMap) {
 
 		Location locationSer = service.save(location);
 		String msg = "Location is saved with" + locationSer.getId();
-		emailUtil.sendEmail("chouhanramesh74@gmail.com", "Location check mail",
-				"This is test mail for location application");
+	//	emailUtil.sendEmail("chouhanramesh74@gmail.com", "Location check mail date 29-04-2019",
+			//	"This is test mail for location application");
 		modelMap.addAttribute("msg", msg);
 		return "createLocation";
 	}

@@ -19,7 +19,6 @@ public class CityController {
 	@Autowired
 	CityService cityService;
 
-	@SuppressWarnings("static-access")
 	@GetMapping("/AllDetails")
 	ResponseEntity<List<City>> getCityAlldetails() {
 		List<City> result = null;
@@ -40,6 +39,11 @@ public class CityController {
 			result = cityService.getAllDetailsById(id);	
 	return ResponseEntity.status(HttpStatus.OK).body(result);
 	
+	}
+	
+	
+	public void test() {
+		System.out.println("Hello  test method...");
 	}
 	
 }
